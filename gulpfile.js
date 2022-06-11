@@ -14,7 +14,7 @@ function build() {
   return gulp
     .src(['./src/prism-tyranoscript.js'])
     .pipe(header(header_str))
-    .pipe(gulp.dest('./dist'))
+    .pipe(gulp.dest('./docs'))
     .pipe(uglify())
     .pipe(header(header_str))
     .pipe(
