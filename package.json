@@ -1,0 +1,21 @@
+{
+  "name": "prism-tyranoscript.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "prism-tyranoscript.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "build": "gulp build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-header": "^2.0.9",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}

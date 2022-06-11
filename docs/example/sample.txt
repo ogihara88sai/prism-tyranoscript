@@ -1,0 +1,59 @@
+*ラベル
+
+;行コメント
+
+/*
+ブロックコメント
+ブロックコメント
+ブロックコメント
+*/
+
+#
+あああああ
+
+#花子
+あああああ[l][r]
+あああああ[p]
+
+[bg storage="room.jpg" time=1000]
+@bg storage="room.jpg" time=1000
+
+;%や&を強調
+[macro name="test"]
+[font color=%color * ]
+[font color="%color" * ]
+[endmacro]
+[jump storage="&f.storage+'.ks'" target=&f.target+1]
+
+;任意の属性の&に続く中身やexp/cond属性の中身を
+;JavaScriptとしてハイライトすることも可能だが
+;逆に見にくいと思われたので保留中
+
+;[iscript]-[endscript]の中身はJSとしてハイライト
+[iscript]
+console.log("Hello JavaScript!")
+f.test = 1
+f.test = 'text'
+[endscript]
+
+;@iscript-@endscriptの中身もJavaScriptとしてハイライト
+@iscript
+function add(a, b) {
+  return a + b
+}
+TYRANO.kag.ftag.startTag('jump', { target: '*next' })
+@endscript
+
+;[html]-[endhtml]の中身はHTMLとしてハイライト
+[html]
+<h1>Hello HTML!</h1>
+<p class="p" style="color: blue">Text</p>
+<button onclick="alert(123)">BUTTON</button>
+<script>
+  console.log('Hello JavaScript!')
+  </script>
+<style>
+  h1 { color: red; }
+</style>
+[endhtml]
+[s]

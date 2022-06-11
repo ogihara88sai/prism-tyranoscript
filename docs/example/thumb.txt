@@ -1,0 +1,13 @@
+;ティラノスクリプト × Prism.js
+
+*Room
+#あかね
+今日はいい天気だね[l][r]
+みんなで海に行こうよ！[p]
+
+*Sea
+@bg storage="sea.jpg" time=1000
+海に来たよ！[p]
+[iscript]
+f.love += 1;
+[endscript]

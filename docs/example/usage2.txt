@@ -1,0 +1,4 @@
+<pre class="language-tyranoscript"><code>;サンプル
+*Sample
+ティラノスクリプトのシンタックスハイライトだよ[p]
+[bg storage="room.jpg" time="1000"]</code></pre>

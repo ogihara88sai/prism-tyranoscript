@@ -1,0 +1,4 @@
+;サンプル
+*Sample
+ティラノスクリプトのシンタックスハイライトだよ[p]
+[bg storage="room.jpg" time="1000"]

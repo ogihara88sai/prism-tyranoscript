@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>prism-tyranoscript.js</title>
+  <link id="css" href="prism.css" rel="stylesheet">
+  <script src="prism.js"></script>
+  <script src="../dist/prism-tyranoscript.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <span class="navbar-brand">Style</span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+        aria-controls="navbar" aria-expanded="false" aria-label="ナビゲーションの切替">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" onclick="change_css(this)" href="#">Default</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="change_css(this)" href="#">Dark</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="change_css(this)" href="#">Funky</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" onclick="change_css(this)" href="#">Okaidia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="change_css(this)" href="#">Coy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="change_css(this)" href="#">Twilight</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="change_css(this)" href="#">Solarized Light</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="change_css(this)" href="#">Tomorrow Night</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row my-5">
+      <div class="col-0 col-lg-1 col-xl-2"></div>
+      <div class="col-12 col-lg-10 col-xl-8">
+        <h1 class="my-3">prism-tyranoscript.js</h1>
+        <pre class="line-numbers language-tyranoscript"
+          data-line="5-6,10"><code data-src="example/thumb.txt"></code></pre>
+        <p class="mt-5"></p>
+        <p>JSライブラリ『<a href="https://prismjs.com/"
+            target="_blank">Prism.js』</a>と組み合わせてティラノスクリプトのコードをシンタックスハイライトするための拡張ファイル『<span
+            class="text-danger fw-bold">prism-tyranoscript.js</span>』を制作しました。ブログなどにティラノスクリプトのコードを貼りたいときにご活用いただけます。</p>
+        <h2 class="mt-5">ダウンロード</h2>
+        <p>Prism.jsの本体（prism.jsとprism.css）は<a
+            href="https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript&plugins=line-highlight+line-numbers+show-language+toolbar+copy-to-clipboard"
+            target="_blank">こちら</a>からダウンロードしてください。prism.jsにはJavaScriptとHTMLが含まれている必要があります。</p>
+        <p>Prism.jsの拡張ファイルであるprism-tyranoscript.jsは<a href="https://"
+            target="_blank">こちら</a>からダウンロードしてください。なお、圧縮版であるprism-tyranoscript.min.jsも同梱されています。prism-tyranoscript.jsの代わりにこちらを使用することもできます。
+        </p>
+        <h2 class="mt-5">使い方</h2>
+        <p>prism.js、prism.css、prism-tyranoscript.jsを読み込みます。prism-tyranoscript.jsはprism.jsよりも後に読み込む必要があります。</p>
+        <pre class="my-3 language-html"><code data-src="example/usage1.txt"></code></pre>
+        <p>ハイライトしたいスクリプトを&lt;pre&gt;&lt;code&gt;の中に埋め込み、&lt;pre&gt;にlanguage-tyranoscriptクラスを付けます。これだけです。</p>
+        <pre class="my-3 language-html"><code data-src="example/usage2.txt"></code></pre>
+        <p></p>すると、埋め込んだスクリプトが次のようにハイライトされます。</p>
+        <pre class="my-3 language-tyranoscript"><code data-src="example/usage3.txt"></code></pre>
+        <p>詳しい使い方を知りたい方は、ネットでPrism.jsの解説記事を検索してみてください。</p>
+        <p><a class="fw-bold" href="https://dezanari.com/prismjs/" target="_blank">Prism.jsの使い方！シンタックスハイライトにおすすめ |
+            でざなり</a><br><a class="small" href="https://dezanari.com/prismjs/"
+            target="_blank">https://dezanari.com/prismjs/</a></p>
+        <h2 class="mt-5">いろんなハイライト</h2>
+        <pre class="line-numbers language-tyranoscript"><code data-src="example/sample.txt"></code></pre>
+      </div>
+      <div class="col-0 col-lg-1 col-xl-2"></div>
+    </div>
+  </div>
+  <script>
+    $('code[data-src]').each((i, code) => {
+      const $code = $(code);
+      const src = $code.data('src');
+      $.get(src, (data) => {
+        $code.text(data);
+        Prism.highlightElement(code);
+      });
+    });
+
+    function change_css(_this) {
+      const $this = $(_this);
+      $('.nav-link').removeClass('active');
+      $this.addClass('active');
+      const text = $this.text().replace(' ', '-').toLowerCase();
+      const src = `prism-${text}.css`;
+      $('#css').remove();
+      $('head').append(`<link id="css" href="${src}" rel="stylesheet">`);
+    }
+
+    //const html = Prism.highlight(data, Prism.languages.tyranoscript);
+    //console.log(html);
+  </script>
+</body>
+
+</html>
