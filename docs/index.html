@@ -14,6 +14,15 @@
   <!-- SEO -->
   <title>prism-tyranoscript.js</title>
   <meta content="『prism-tyranoscript.js』は、ティラノスクリプトのコードをPrism.jsでシンタックスハイライトするための拡張ファイルです。" name="description">
+  <!-- Preload -->
+  <link class="preload" href="prism-coy.css" rel="stylesheet">
+  <link class="preload" href="prism-dark.css" rel="stylesheet">
+  <link class="preload" href="prism-default.css" rel="stylesheet">
+  <link class="preload" href="prism-funky.css" rel="stylesheet">
+  <link class="preload" href="prism-okaidia.css" rel="stylesheet">
+  <link class="preload" href="prism-solarized-light.css" rel="stylesheet">
+  <link class="preload" href="prism-tomorrow-night.css" rel="stylesheet">
+  <link class="preload" href="prism-twilight.css" rel="stylesheet">
   <!-- Prism.js -->
   <link id="css" href="prism.css" rel="stylesheet">
   <script src="prism.js"></script>
@@ -150,11 +159,8 @@
       $('head').append(`<link id="css" href="${src}" rel="stylesheet">`);
     }
 
-    $('.nav-link').each((i, _this) => {
-      const $this = $(_this);
-      const text = $this.text().replace(' ', '-').toLowerCase();
-      const src = `prism-${text}.css`;
-      $.get(src);
+    $(() => {
+      $('.preload').remove();
     });
 
     //const html = Prism.highlight(data, Prism.languages.tyranoscript);
