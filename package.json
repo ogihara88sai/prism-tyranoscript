@@ -1,17 +1,11 @@
 {
-  "name": "prism-tyranoscript.js",
+  "name": "prism-tyranoscript",
   "version": "1.0.0",
-  "description": "",
-  "main": "prism-tyranoscript.js",
-  "directories": {
-    "example": "example"
-  },
   "scripts": {
     "build": "gulp build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "@ogihara88sai",
+  "license": "MIT",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-header": "^2.0.9",
