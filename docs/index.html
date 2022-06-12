@@ -4,27 +4,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@ogihara88sai">
   <meta property="og:url" content="https://ogihara88sai.github.io/prism-tyranoscript/">
   <meta property="og:title" content="prism-tyranoscript.js">
   <meta property="og:description" content="『prism-tyranoscript.js』は、ティラノスクリプトのコードをPrism.jsでシンタックスハイライトするための拡張ファイルです。">
   <meta property="og:image" content="https://ogihara88sai.github.io/prism-tyranoscript/card.png">
+  <!-- SEO -->
   <title>prism-tyranoscript.js</title>
   <meta content="『prism-tyranoscript.js』は、ティラノスクリプトのコードをPrism.jsでシンタックスハイライトするための拡張ファイルです。" name="description">
+  <!-- Prism.js -->
   <link id="css" href="prism.css" rel="stylesheet">
   <script src="prism.js"></script>
   <script src="prism-tyranoscript.min.js"></script>
+  <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
+  <!-- Navi -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #323741">
     <div class="container-fluid">
       <span class="navbar-brand">Style</span>
@@ -62,6 +69,8 @@
       </div>
     </div>
   </nav>
+  <!-- End of Navi -->
+  <!-- Contents -->
   <div class="container">
     <div class="row my-5">
       <div class="col-0 col-lg-1 col-xl-2"></div>
@@ -97,21 +106,30 @@
       <div class="col-0 col-lg-1 col-xl-2"></div>
     </div>
   </div>
+  <!-- End of Contents -->
+  <!-- Footer -->
   <footer class="text-center text-lg-start text-white" style="background-color: #3e4551">
-    <div class="container pb-0">
-      <section class="mb-2 pt-2 text-center">
-        <!-- Twitter -->
-        <a class="btn btn-outline-light btn-floating rounded-circle m-1" href="https://twitter.com/ogihara88sai"
-          role="button"><i class="fab fa-twitter"></i></a>
-        <!-- Github -->
-        <a class="btn btn-outline-light btn-floating rounded-circle m-1"
-          href="https://github.com/ogihara88sai/prism-tyranoscript" role="button"><i class="fab fa-github"></i></a>
+    <div class="container">
+      <section class="py-1">
+        <div class="row m-auto d-flex align-items-center">
+          <div class="col-0 col-lg-1 col-xl-2"></div>
+          <div class="col-7 col-lg-5 col-xl-4 text-start text-md-start">
+            <div class="p-3">
+              © 2022 @ogihara88sai
+            </div>
+          </div>
+          <div class="col-5 col-lg-5 col-xl-4 text-end text-md-end">
+            <a class="btn btn-outline-light btn-floating rounded-circle border-2 m-1" class="text-white"
+              href="https://github.com/ogihara88sai/prism-tyranoscript" role="button"><i class="fab fa-github"></i></a>
+            <a class="btn btn-outline-light btn-floating rounded-circle border-2 m-1" class="text-white"
+              href="https://twitter.com/ogihara88sai" role="button"><i class="fab fa-twitter"></i></a>
+          </div>
+          <div class="col-0 col-lg-1 col-xl-2"></div>
+        </div>
       </section>
     </div>
-    <div class="text-center p-3" style="background-color: #323741">
-      © 2022 @ogihara88sai</a>
-    </div>
   </footer>
+  <!-- End of Footer -->
   <script>
     $('code[data-src]').each((i, code) => {
       const $code = $(code);
