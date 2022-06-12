@@ -4,12 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ogihara88sai">
+  <meta property="og:url" content="https://ogihara88sai.github.io/prism-tyranoscript/">
+  <meta property="og:title" content="prism-tyranoscript.js">
+  <meta property="og:description" content="『prism-tyranoscript.js』は、ティラノスクリプトのコードをPrism.jsでシンタックスハイライトするための拡張ファイルです。">
+  <meta property="og:image" content="https://ogihara88sai.github.io/prism-tyranoscript/card.png">
   <title>prism-tyranoscript.js</title>
+  <meta content="『prism-tyranoscript.js』は、ティラノスクリプトのコードをPrism.jsでシンタックスハイライトするための拡張ファイルです。" name="description">
   <link id="css" href="prism.css" rel="stylesheet">
   <script src="prism.js"></script>
   <script src="prism-tyranoscript.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -17,7 +25,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #323741">
     <div class="container-fluid">
       <span class="navbar-brand">Style</span>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
@@ -62,33 +70,48 @@
         <pre class="line-numbers language-tyranoscript"
           data-line="5-6,10"><code data-src="example/thumb.txt"></code></pre>
         <p class="mt-5"></p>
-        <p>JSライブラリ『<a href="https://prismjs.com/"
-            target="_blank">Prism.js』</a>と組み合わせてティラノスクリプトのコードをシンタックスハイライトするための拡張ファイル『<span
-            class="text-danger fw-bold">prism-tyranoscript.js</span>』を制作しました。ブログなどにティラノスクリプトのコードを貼りたいときにご活用いただけます。</p>
+        <p>『<span class="text-danger fw-bold">prism-tyranoscript.js</span>』は、JSライブラリ『<a href="https://prismjs.com/"
+            target="_blank">Prism.js</a>』と組み合わせてティラノスクリプトのコードをシンタックスハイライトするための拡張ファイルです。ブログなどにティラノスクリプトのコードを貼りたいときにご活用いただけます。
+        </p>
         <h2 class="mt-5">ダウンロード</h2>
         <p>Prism.jsの本体（prism.jsとprism.css）は<a
             href="https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript&plugins=line-highlight+line-numbers+show-language+toolbar+copy-to-clipboard"
-            target="_blank">こちら</a>からダウンロードしてください。prism.jsにはJavaScriptとHTMLが含まれている必要があります。</p>
+            target="_blank">こちら</a>からダウンロードできます。prism.jsの言語パッケージにはJavaScriptとHTMLを含める必要があります。</p>
         <p>Prism.jsの拡張ファイルであるprism-tyranoscript.jsは<a href="https://github.com/ogihara88sai/prism-tyranoscript/releases"
-            target="_blank">こちら</a>からダウンロードしてください。なお、圧縮版であるprism-tyranoscript.min.jsも同梱されています。prism-tyranoscript.jsの代わりにこちらを使用することもできます。
+            target="_blank">こちら</a>からダウンロードできます。なお、圧縮版であるprism-tyranoscript.min.jsも同梱されています。prism-tyranoscript.jsの代わりにこちらを使用することもできます。
         </p>
         <h2 class="mt-5">使い方</h2>
         <p>prism.js、prism.css、prism-tyranoscript.jsを読み込みます。prism-tyranoscript.jsはprism.jsよりも後に読み込む必要があります。</p>
         <pre class="my-3 language-html"><code data-src="example/usage1.txt"></code></pre>
-        <p>ハイライトしたいスクリプトを&lt;pre&gt;&lt;code&gt;の中に埋め込み、&lt;pre&gt;にlanguage-tyranoscriptクラスを付けます。これだけです。</p>
+        <p>あとはハイライトしたいスクリプトを&lt;pre&gt;&lt;code&gt;の中に埋め込んで、&lt;pre&gt;にlanguage-tyranoscriptクラスを付けるだけです。</p>
         <pre class="my-3 language-html"><code data-src="example/usage2.txt"></code></pre>
         <p></p>すると、埋め込んだスクリプトが次のようにハイライトされます。</p>
         <pre class="my-3 language-tyranoscript"><code data-src="example/usage3.txt"></code></pre>
-        <p>詳しい使い方を知りたい方は、ネットでPrism.jsの解説記事を検索してみてください。</p>
+        <p>Prism.jsの詳しい使い方を知りたい方は、ネットでPrism.jsの解説記事を検索してみてください。</p>
         <p><a class="fw-bold" href="https://dezanari.com/prismjs/" target="_blank">Prism.jsの使い方！シンタックスハイライトにおすすめ |
             でざなり</a><br><a class="small" href="https://dezanari.com/prismjs/"
             target="_blank">https://dezanari.com/prismjs/</a></p>
-        <h2 class="mt-5">いろんなハイライト</h2>
+        <h2 class="mt-5">いろんなハイライトの例</h2>
         <pre class="line-numbers language-tyranoscript"><code data-src="example/sample.txt"></code></pre>
       </div>
       <div class="col-0 col-lg-1 col-xl-2"></div>
     </div>
   </div>
+  <footer class="text-center text-lg-start text-white" style="background-color: #3e4551">
+    <div class="container pb-0">
+      <section class="mb-2 pt-2 text-center">
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating rounded-circle m-1" href="https://twitter.com/ogihara88sai"
+          role="button"><i class="fab fa-twitter"></i></a>
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating rounded-circle m-1"
+          href="https://github.com/ogihara88sai/prism-tyranoscript" role="button"><i class="fab fa-github"></i></a>
+      </section>
+    </div>
+    <div class="text-center p-3" style="background-color: #323741">
+      © 2022 @ogihara88sai</a>
+    </div>
+  </footer>
   <script>
     $('code[data-src]').each((i, code) => {
       const $code = $(code);
